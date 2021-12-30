@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_advanced_blank"
+    },
+    {
+      "item": "toolupgrades:paste_clay"
+    }
+  ],
+  
+  "result": {
+    "item": "toolupgrades:modifier_advanced_clay"
+  }
+}

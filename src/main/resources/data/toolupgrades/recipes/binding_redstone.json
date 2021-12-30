@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "#X#",
+    "XOX",
+    "#X#"
+  
+  ],
+  
+  "key": {
+    "O": {
+      "item": "minecraft:redstone_torch"
+    },
+    "X": {
+      "tag": "forge:dusts/redstone"
+    },
+    "#": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  
+  
+  "result": {
+    "item": "toolupgrades:redstone_binding"
+  }
+}

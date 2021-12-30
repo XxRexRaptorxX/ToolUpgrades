@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_ink"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "nbt": {
+        "StoredEnchantments": [
+              {
+                "id": "thorns",
+                "lvl": 1
+              } 
+             ]
+           }
+  }
+}

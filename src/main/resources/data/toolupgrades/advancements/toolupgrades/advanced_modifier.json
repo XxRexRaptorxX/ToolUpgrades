@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "toolupgrades:modifier_advanced_blank"
+        },
+        "title": {
+            "translate": "advancements.toolupgrades.advanced_modifier.title"
+        },
+        "description": {
+            "translate": "advancements.toolupgrades.advanced_modifier.description"
+        },   
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    
+    "parent": "toolupgrades:toolupgrades/modifier",
+    "criteria": {
+        "toolupgrades_advanced_modifier": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "toolupgrades:modifier_advanced_blank"
+                    }
+                ]
+            }
+        }
+    }
+}

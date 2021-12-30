@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_advanced_clay"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "nbt": {
+        "StoredEnchantments": [
+              {
+                "id": "infinity",
+                "lvl": 1
+              } 
+             ]
+           }
+  }
+}

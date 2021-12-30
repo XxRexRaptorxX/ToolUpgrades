@@ -1,0 +1,53 @@
+{
+    "itemGroup.toolupgrades_tab": "Tool Upgrades",
+    "message.toolupgrades.not_enough_levels": "You have not enough experience levels!",
+    "message.toolupgrades.wrong_block": "Use it on a bookshelf...",
+    "message.toolupgrades.enchant_bindings_jei_desc": "Enchant your binding with enough enchantig levels on a bookshelf.",
+
+    "item.toolupgrades.redstone_binding": "Redstone Binding",
+    "item.toolupgrades.enchanted_binding": "Enchanted Binding",
+    "item.toolupgrades.advanced_binding": "Advanced Binding",
+    "item.toolupgrades.enchanted_advanced_binding": "Enchanted Advanced Binding",
+    "item.toolupgrades.modifier_advanced_blank": "Blank Advanced Modifier",
+    "item.toolupgrades.modifier_blank": "Blank Modifier",
+
+    "item.toolupgrades.modifier_blaze_powder": "Blaze Modifier",
+    "item.toolupgrades.modifier_gun_powder": "Gunpowder Modifier",
+    "item.toolupgrades.modifier_glowstone": "Glowstone Modifier",
+    "item.toolupgrades.modifier_redstone": "Redstone Modifier",
+    "item.toolupgrades.modifier_sugar": "Sugar Modifier",
+    "item.toolupgrades.modifier_bone": "Bonemeal Modifier",
+    "item.toolupgrades.modifier_clay": "Clay Modifier",
+    "item.toolupgrades.modifier_ink": "Ink Modifier",
+    "item.toolupgrades.modifier_lapis": "Lapis Modifier",
+    "item.toolupgrades.modifier_slime": "Slime Modifier",
+    "item.toolupgrades.modifier_cursed": "Cursed Modifier",
+
+    "item.toolupgrades.modifier_advanced_blaze_powder": "Advanced Blaze Modifier",
+    "item.toolupgrades.modifier_advanced_gun_powder": "Advanced Gunpowder Modifier",
+    "item.toolupgrades.modifier_advanced_glowstone": "Advanced Glowstone Modifier",
+    "item.toolupgrades.modifier_advanced_redstone": "Advanced Redstone Modifier",
+    "item.toolupgrades.modifier_advanced_sugar": "Advanced Sugar Modifier",
+    "item.toolupgrades.modifier_advanced_bone": "Advanced Bone Modifier",
+    "item.toolupgrades.modifier_advanced_clay": "Advanced Clay Modifier",
+    "item.toolupgrades.modifier_advanced_ink": "Advanced Ink Modifier",
+    "item.toolupgrades.modifier_advanced_lapis": "Advanced Lapis Modifier",
+    "item.toolupgrades.modifier_advanced_slime": "Advanced Slime Modifier",
+
+    "item.toolupgrades.paste_blaze_powder": "Blaze Paste",
+    "item.toolupgrades.paste_gun_powder": "Gunpowder Paste",
+    "item.toolupgrades.paste_redstone": "Redstone Paste",
+    "item.toolupgrades.paste_glowstone": "Glowstone Paste",
+    "item.toolupgrades.paste_sugar": "Sugar Paste",
+    "item.toolupgrades.paste_bone": "Bonemeal Paste",
+    "item.toolupgrades.paste_clay": "Clay Paste",
+    "item.toolupgrades.paste_ink": "Ink Paste",
+    "item.toolupgrades.paste_lapis": "Lapis Paste",
+    "item.toolupgrades.paste_slime": "Slime Paste",
+
+    "advancements.toolupgrades.modifier.title": "Choose your enchantment!",
+    "advancements.toolupgrades.modifier.description": "Enchant items with a modifier",
+    "advancements.toolupgrades.advanced_modifier.title": "Better enchantments!",
+    "advancements.toolupgrades.advanced_modifier.description": "Enchant items with a advanced modifier"
+}
+

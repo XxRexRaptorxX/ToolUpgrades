@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "modifier_blank",
+  "pattern": [
+  
+    " X ",
+    "XOX",
+    " X "
+    
+  ],
+  
+  "key": {
+    "X": [
+      {
+        "tag": "forge:sticks/diamond"
+      },
+      {
+        "tag": "forge:rods/diamond"
+      }
+     ],
+    
+    "O": {
+      "item": "toolupgrades:enchanted_binding"
+    }
+  },
+  
+  
+  "result": {
+    "item": "toolupgrades:modifier_blank"
+  }
+}

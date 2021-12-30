@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_sugar"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "nbt": {
+        "StoredEnchantments": [
+              {
+                "id": "depth_strider",
+                "lvl": 2
+              } 
+             ]
+           }
+  }
+}

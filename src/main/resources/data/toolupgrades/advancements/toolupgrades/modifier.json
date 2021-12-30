@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "toolupgrades:modifier_blank"
+        },
+        "title": {
+            "translate": "advancements.toolupgrades.modifier.title"
+        },
+        "description": {
+            "translate": "advancements.toolupgrades.modifier.description"
+        },   
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    
+    "parent": "minecraft:story/enchant_item",
+    "criteria": {
+        "toolupgrades_modifier": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "toolupgrades:modifier_blank"
+                    }
+                ]
+            }
+        }
+    }
+}

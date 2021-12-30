@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "toolupgrades:modifier_cursed"
+  },
+
+  "result": "toolupgrades:modifier_blank",
+  "experience": 0,
+  "cookingTime": 100
+}
