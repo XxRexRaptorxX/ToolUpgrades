@@ -1,10 +1,11 @@
 modLoader="javafml"
-loaderVersion="[38,)"
+loaderVersion="[41,)"
 license="All rights reserved"
 issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/tool-upgrades/issues"
+
 [[mods]]
 modId="toolupgrades"
-version="3.0.0"
+version="3.0.1"
 displayName="ToolUpgrades"
 updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/ToolUpgrades.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/tool-upgrades"
@@ -18,13 +19,13 @@ With this mod can you upgrade your tools and weapons with modifiers!
 [[dependencies.toolupgrades]]
     modId="forge"
     mandatory=true
-    versionRange="[38,)"
+    versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.toolupgrades]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18,1.19)"
+    versionRange="[1.19,1.20)"
     ordering="NONE"
     side="BOTH"

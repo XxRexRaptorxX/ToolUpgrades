@@ -4,8 +4,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
@@ -22,8 +21,7 @@ import net.minecraftforge.fml.VersionChecker;
 import net.minecraftforge.fml.common.Mod;
 import xxrexraptorxx.toolupgrades.main.ModItems;
 import xxrexraptorxx.toolupgrades.main.References;
-
-import java.util.UUID;
+import xxrexraptorxx.toolupgrades.main.ToolUpgrades;
 
 @Mod.EventBusSubscriber(modid = References.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class Events {
@@ -39,16 +37,20 @@ public class Events {
                 if (VersionChecker.getResult(ModList.get().getModContainerById(References.MODID).get().getModInfo()).status() == VersionChecker.Status.OUTDATED ||
                         VersionChecker.getResult(ModList.get().getModContainerById(References.MODID).get().getModInfo()).status() == VersionChecker.Status.BETA_OUTDATED ) {
 
-                    Minecraft.getInstance().player.sendMessage(new TextComponent(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"), UUID.randomUUID());
-                    Minecraft.getInstance().player.sendMessage(new TextComponent(ChatFormatting.GRAY + References.URL), UUID.randomUUID());
+                    Minecraft.getInstance().player.sendSystemMessage(Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"));
+                    Minecraft.getInstance().player.sendSystemMessage(Component.literal(ChatFormatting.GRAY + References.URL));
 
                     hasShownUp = true;
+
                 } else if (VersionChecker.getResult(ModList.get().getModContainerById(References.MODID).get().getModInfo()).status() == VersionChecker.Status.FAILED) {
-                    System.err.println(References.NAME + "'s version checker failed!");
+                    ToolUpgrades.LOGGER.error(References.NAME + "'s version checker failed!");
+                    hasShownUp = true;
+
                 }
             }
         }
     }
+
 
 
     /** ENCHANTER **/
@@ -86,11 +88,11 @@ public class Events {
                         }
                     } else {
                         if (world.isClientSide)
-                            player.sendMessage(new TranslatableComponent("message.toolupgrades.not_enough_levels", new Object[]{10}), UUID.randomUUID());
+                            player.displayClientMessage(Component.translatable("message.toolupgrades.not_enough_levels", new Object[]{10}), true);
                     }
                 } else {
                     if (world.isClientSide)
-                        player.sendMessage(new TranslatableComponent("message.toolupgrades.wrong_block", new Object[]{10}), UUID.randomUUID());
+                        player.displayClientMessage(Component.translatable("message.toolupgrades.wrong_block", new Object[]{10}), true);
                 }
             }
         }
@@ -131,11 +133,11 @@ public class Events {
                         }
                     } else {
                         if (world.isClientSide)
-                            player.sendMessage(new TranslatableComponent("message.toolupgrades.not_enough_levels", new Object[]{10}), UUID.randomUUID());
+                            player.displayClientMessage(Component.translatable("message.toolupgrades.not_enough_levels", new Object[]{10}), true);
                     }
                 } else {
                     if (world.isClientSide)
-                        player.sendMessage(new TranslatableComponent("message.toolupgrades.wrong_block", new Object[]{10}), UUID.randomUUID());
+                        player.displayClientMessage(Component.translatable("message.toolupgrades.wrong_block", new Object[]{10}), true);
                 }
             }
         }

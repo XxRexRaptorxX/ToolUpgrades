@@ -11,7 +11,6 @@ import xxrexraptorxx.toolupgrades.items.*;
 
 public class ModItems {
 
-
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, References.MODID);
 
 

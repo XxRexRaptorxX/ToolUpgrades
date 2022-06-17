@@ -1,5 +1,5 @@
 package xxrexraptorxx.toolupgrades.integration;
-
+/**
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
@@ -38,7 +38,6 @@ public class JEIIntegration implements IModPlugin {
 
             registry.addIngredientInfo(bindings, VanillaTypes.ITEM, new TranslatableComponent("message.toolupgrades.enchant_bindings_jei_desc"));
         }
-
-
     }
 }
+ */
