@@ -78,7 +78,7 @@ public class ItemModifier extends Item {
             tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.DEPTH_STRIDER)));
 
         } else if (this == ModItems.MODIFIER_CURSED.get()) {
-            tooltip.add(Component.literal(ChatFormatting.OBFUSCATED + "+ Curses"));
+            tooltip.add(Component.literal( ChatFormatting.OBFUSCATED + "+ Curses").withStyle(ChatFormatting.DARK_PURPLE));
 
         } else {
             tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "???"));
