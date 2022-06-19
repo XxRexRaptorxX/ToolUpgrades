@@ -1,14 +1,13 @@
 package xxrexraptorxx.toolupgrades.integration;
-/**
+
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.runtime.IIngredientManager;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import xxrexraptorxx.toolupgrades.main.ModItems;
 import xxrexraptorxx.toolupgrades.main.References;
 import xxrexraptorxx.toolupgrades.utils.Config;
@@ -36,8 +35,7 @@ public class JEIIntegration implements IModPlugin {
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED.get()));
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED_ADVANCED.get()));
 
-            registry.addIngredientInfo(bindings, VanillaTypes.ITEM, new TranslatableComponent("message.toolupgrades.enchant_bindings_jei_desc"));
+            registry.addIngredientInfo(bindings, VanillaTypes.ITEM_STACK, Component.translatable("message.toolupgrades.enchant_bindings_jei_desc"));
         }
     }
 }
- */
