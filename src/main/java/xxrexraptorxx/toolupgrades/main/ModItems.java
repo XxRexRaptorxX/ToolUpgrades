@@ -5,9 +5,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.RegistryObject;
-import xxrexraptorxx.toolupgrades.items.*;
+import xxrexraptorxx.toolupgrades.items.ItemBasic;
+import xxrexraptorxx.toolupgrades.items.ItemModifier;
 
 public class ModItems {
 
