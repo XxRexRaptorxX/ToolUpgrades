@@ -1,14 +1,9 @@
 package xxrexraptorxx.toolupgrades.utils;
 
-import com.electronwill.nightconfig.core.file.CommentedFileConfig;
-import com.electronwill.nightconfig.core.io.WritingMode;
 import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-
-import java.nio.file.Path;
 
 @Mod.EventBusSubscriber
 public class Config {
@@ -20,6 +15,8 @@ public class Config {
     public static ForgeConfigSpec CLIENT_CONFIG;
 
     public static ForgeConfigSpec.BooleanValue UPDATE_CHECKER;
+    public static ForgeConfigSpec.BooleanValue PATREON_REWARDS;
+
     public static ForgeConfigSpec.BooleanValue PASSIVE_ENCHANTING;
     public static ForgeConfigSpec.IntValue BINDING_ENCHANTING_COST;
     public static ForgeConfigSpec.IntValue ADVANCED_BINDING_ENCHANTING_COST;
@@ -50,6 +47,7 @@ public class Config {
 
         builder.comment("World").push(CATEGORY_WORLD);
         //LOOT_GENERATOR = builder.comment("Enable or disable the dungeon loot generator").define("loot_generator", true);
+        PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons").define("patreon_rewards", true);
         PASSIVE_ENCHANTING = builder.comment("Enable or disable enchanting of bindings on a bookshelf").define("passive_enchanting", true);
         BINDING_ENCHANTING_COST = builder.comment("The amount of experience levels you need to enchant a binding on a bookshelf").defineInRange("binding_enchanting_cost", 3, 1, 30);
         ADVANCED_BINDING_ENCHANTING_COST = builder.comment("The amount of experience levels you need to enchant a advanced binding on a bookshelf").defineInRange("advanced_binding_enchanting_cost", 6, 1, 30);
