@@ -16,8 +16,8 @@ public class ToolUpgrades {
 
 
     public ToolUpgrades() {
-        ModItems.init();
         Config.init();
+        ModItems.init();
     }
 
 }
