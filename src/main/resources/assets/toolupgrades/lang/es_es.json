@@ -1,0 +1,54 @@
+{
+	//translated by ragcloud
+    "itemGroup.toolupgrades_tab": "Tool Upgrades",
+    "message.toolupgrades.not_enough_levels": "¡No tienes suficientes niveles de experencia!",
+    "message.toolupgrades.wrong_block": "Usalo en una libreria...",
+    "message.toolupgrades.enchant_bindings_jei_desc": "Enchant your binding with enough enchantig levels on a bookshelf.",
+
+    "item.toolupgrades.redstone_binding": "Ligamiento de Redstone",
+    "item.toolupgrades.enchanted_binding": "Ligamiento Encantado",
+    "item.toolupgrades.advanced_binding": "Ligamiento Avanzado",
+    "item.toolupgrades.enchanted_advanced_binding": "Ligamiento Encantado Avanzado",
+    "item.toolupgrades.modifier_advanced_blank": "Modificador Avanzado en Blanco",
+    "item.toolupgrades.modifier_blank": "Modificador en Blanco",
+
+    "item.toolupgrades.modifier_blaze_powder": "Modificador de Blaze",
+    "item.toolupgrades.modifier_gun_powder": "Modificador de Polvora",
+    "item.toolupgrades.modifier_glowstone": "Modificador de Glowstone",
+    "item.toolupgrades.modifier_redstone": "Modificador de Redstone",
+    "item.toolupgrades.modifier_sugar": "Modificador de Azucar",
+    "item.toolupgrades.modifier_bone": "Modificador de Polvo de Hueso",
+    "item.toolupgrades.modifier_clay": "Modificador de Arcilla",
+    "item.toolupgrades.modifier_ink": "Modificador de Tinta",
+    "item.toolupgrades.modifier_lapis": "Modificador de Lapis",
+    "item.toolupgrades.modifier_slime": "Modificador de Slime",
+    "item.toolupgrades.modifier_cursed": "Modificador Maldito",
+
+    "item.toolupgrades.modifier_advanced_blaze_powder": "Modificador Avanzado de Blaze",
+    "item.toolupgrades.modifier_advanced_gun_powder": "Modificador Avanzado de Polvora",
+    "item.toolupgrades.modifier_advanced_glowstone": "Modificador Avanzado de Glowstone",
+    "item.toolupgrades.modifier_advanced_redstone": "Modificador Avanzado de Redstone",
+    "item.toolupgrades.modifier_advanced_sugar": "Modificador Avanzado de Azucar",
+    "item.toolupgrades.modifier_advanced_bone": "Modificador Avanzado de Hueso",
+    "item.toolupgrades.modifier_advanced_clay": "Modificador Avanzado de Arcilla",
+    "item.toolupgrades.modifier_advanced_ink": "Modificador Avanzado de Tinta",
+    "item.toolupgrades.modifier_advanced_lapis": "Modificador Avanzado de Lapis",
+    "item.toolupgrades.modifier_advanced_slime": "Modificador Avanzado de Slime",
+
+    "item.toolupgrades.paste_blaze_powder": "Masilla de Blaze",
+    "item.toolupgrades.paste_gun_powder": "Masilla de Polvora",
+    "item.toolupgrades.paste_redstone": "Masilla de Redstone",
+    "item.toolupgrades.paste_glowstone": "Masilla de Glowstone",
+    "item.toolupgrades.paste_sugar": "Masilla de Azucar",
+    "item.toolupgrades.paste_bone": "Masilla de Polvo de Hueso",
+    "item.toolupgrades.paste_clay": "Masilla de Arcilla",
+    "item.toolupgrades.paste_ink": "Masilla de Tinta",
+    "item.toolupgrades.paste_lapis": "Masilla de Lapis",
+    "item.toolupgrades.paste_slime": "Masilla de Slime",
+
+    "advancements.toolupgrades.modifier.title": "¡Elige tu encantamiento!",
+    "advancements.toolupgrades.modifier.description": "Encanta objetos con Modificadores",
+    "advancements.toolupgrades.advanced_modifier.title": "¡Mejores encantamientos!",
+    "advancements.toolupgrades.advanced_modifier.description": "Encanta objetos con Modificadores Avanzados"
+}
+
