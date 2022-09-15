@@ -1,0 +1,55 @@
+{
+	"_comment": "translated by PasteKBrain",
+	
+    "itemGroup.toolupgrades_tab": "Tool Upgrades",
+    "message.toolupgrades.not_enough_levels": "Vous n'avez pas suffisamment d'expérience!",
+    "message.toolupgrades.wrong_block": "À utiliser sur une bibliothèque...",
+    "message.toolupgrades.enchant_bindings_jei_desc": "Enchanter votre embase avec suffisamment de niveaux avec une bibliothèque.",
+
+    "item.toolupgrades.redstone_binding": "Embase en redstone",
+    "item.toolupgrades.enchanted_binding": "Embase enchantée ",
+    "item.toolupgrades.advanced_binding": "Embase amélioré",
+    "item.toolupgrades.enchanted_advanced_binding": "Embase améliorée et enchantée",
+    "item.toolupgrades.modifier_advanced_blank": "Modificateur vierge amélioré",
+    "item.toolupgrades.modifier_blank": "Modificateur vierge",
+
+    "item.toolupgrades.modifier_blaze_powder": "Modificateur en poudre de blaze",
+    "item.toolupgrades.modifier_gun_powder": "Modificateur en poudre à cannon",
+    "item.toolupgrades.modifier_glowstone": "Modificateur en pierre lumineuse",
+    "item.toolupgrades.modifier_redstone": "Modificateur en redstone",
+    "item.toolupgrades.modifier_sugar": "Modificateur en sucre",
+    "item.toolupgrades.modifier_bone": "Modificateur en os",
+    "item.toolupgrades.modifier_clay": "Modificateur en argile",
+    "item.toolupgrades.modifier_ink": "Modificateur encre",
+    "item.toolupgrades.modifier_lapis": "Modificateur en lapis-lazuli",
+    "item.toolupgrades.modifier_slime": "Modificateur en slime",
+    "item.toolupgrades.modifier_cursed": "Modificateur en maudit",
+
+    "item.toolupgrades.modifier_advanced_blaze_powder": "Modificateur amélioré en poudre de blaze",
+    "item.toolupgrades.modifier_advanced_gun_powder": "Modificateur amélioré en poudre à cannon",
+    "item.toolupgrades.modifier_advanced_glowstone": "Modificateur amélioré en pierre lumineuse",
+    "item.toolupgrades.modifier_advanced_redstone": "Modificateur amélioré en redstone",
+    "item.toolupgrades.modifier_advanced_sugar": "Modificateur amélioré en sucre",
+    "item.toolupgrades.modifier_advanced_bone": "Modificateur amélioré en os",
+    "item.toolupgrades.modifier_advanced_clay": "Modificateur amélioré en argile",
+    "item.toolupgrades.modifier_advanced_ink": "Modificateur amélioré en encre",
+    "item.toolupgrades.modifier_advanced_lapis": "Modificateur amélioré en lapis-lazuli",
+    "item.toolupgrades.modifier_advanced_slime": "Modificateur amélioré en slime",
+
+    "item.toolupgrades.paste_blaze_powder": "Colle de poudre de blaze",
+    "item.toolupgrades.paste_gun_powder": "Colle de poudre à cannon",
+    "item.toolupgrades.paste_redstone": "Colle de redstone",
+    "item.toolupgrades.paste_glowstone": "Colle de pierre lumineuse",
+    "item.toolupgrades.paste_sugar": "Colle de sucre",
+    "item.toolupgrades.paste_bone": "Colle de poudre d'os",
+    "item.toolupgrades.paste_clay": "Colle d'argile",
+    "item.toolupgrades.paste_ink": "Colle d'encre",
+    "item.toolupgrades.paste_lapis": "Colle de lapis-lazuli",
+    "item.toolupgrades.paste_slime": "Colle de slime",
+
+    "advancements.toolupgrades.modifier.title": "Choisissez votre enchantement!",
+    "advancements.toolupgrades.modifier.description": "Enchanter un objet avec un modificateur",
+    "advancements.toolupgrades.advanced_modifier.title": "Meilleurs enchantements!",
+    "advancements.toolupgrades.advanced_modifier.description": "Enchanter un objet avec un modificateur amélioré"
+}
+

@@ -1,5 +1,6 @@
 {
-	//translated by ragcloud
+    "_comment": "translated by ragcloud",
+
     "itemGroup.toolupgrades_tab": "Tool Upgrades",
     "message.toolupgrades.not_enough_levels": "¡No tienes suficientes niveles de experencia!",
     "message.toolupgrades.wrong_block": "Usalo en una libreria...",

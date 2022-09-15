@@ -2,7 +2,7 @@
     "itemGroup.toolupgrades_tab": "Tool Upgrades",
     "message.toolupgrades.not_enough_levels": "You have not enough experience levels!",
     "message.toolupgrades.wrong_block": "Use it on a bookshelf...",
-    "message.toolupgrades.enchant_bindings_jei_desc": "Enchant your binding with enough enchantig levels on a bookshelf.",
+    "message.toolupgrades.enchant_bindings_jei_desc": "Enchant your binding with enough enchanting levels on a bookshelf.",
 
     "item.toolupgrades.redstone_binding": "Redstone Binding",
     "item.toolupgrades.enchanted_binding": "Enchanted Binding",
