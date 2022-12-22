@@ -1,5 +1,5 @@
 package xxrexraptorxx.toolupgrades.integration;
-
+/**
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
@@ -39,3 +39,4 @@ public class JEIIntegration implements IModPlugin {
         }
     }
 }
+**/
