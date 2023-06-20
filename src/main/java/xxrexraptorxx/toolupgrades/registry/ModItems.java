@@ -1,4 +1,4 @@
-package xxrexraptorxx.toolupgrades.main;
+package xxrexraptorxx.toolupgrades.registry;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.toolupgrades.items.ItemBasic;
 import xxrexraptorxx.toolupgrades.items.ItemModifier;
+import xxrexraptorxx.toolupgrades.main.References;
 
 public class ModItems {
 

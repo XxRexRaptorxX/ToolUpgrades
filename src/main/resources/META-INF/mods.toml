@@ -1,31 +1,32 @@
 modLoader="javafml"
-loaderVersion="[45,)"
-license="All rights reserved"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
 issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/tool-upgrades/issues"
 
 [[mods]]
-modId="toolupgrades"
-version="3.0.7"
-displayName="ToolUpgrades"
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
 updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/ToolUpgrades.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/tool-upgrades"
+itemIcon="toolupgrades:modifier_glowstone"
 logoFile="logo.png"
-credits=""
-authors="XxRexRaptorxX (RexRaptor)"
-description='''
-With this mod can you upgrade your tools and weapons with modifiers!
-'''
+#credits=""
+authors="${mod_authors}"
+description='''With this mod can you upgrade your tools and weapons with modifiers!'''
 
-[[dependencies.toolupgrades]]
-    modId="forge"
-    mandatory=true
-versionRange="[45,)"
-    ordering="NONE"
-    side="BOTH"
 
-[[dependencies.toolupgrades]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.19.4,1.20)"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="${mc_version_range}"
+ordering="NONE"
+side="BOTH"
+

@@ -9,7 +9,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
-import xxrexraptorxx.toolupgrades.main.ModItems;
+import xxrexraptorxx.toolupgrades.registry.ModItems;
 
 import javax.annotation.Nullable;
 import java.util.List;

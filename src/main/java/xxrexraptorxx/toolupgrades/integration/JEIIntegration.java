@@ -8,7 +8,7 @@ import mezz.jei.api.runtime.IIngredientManager;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import xxrexraptorxx.toolupgrades.main.ModItems;
+import xxrexraptorxx.toolupgrades.registry.ModItems;
 import xxrexraptorxx.toolupgrades.main.References;
 import xxrexraptorxx.toolupgrades.utils.Config;
 

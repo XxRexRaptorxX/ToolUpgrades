@@ -4,7 +4,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
 import org.jetbrains.annotations.Nullable;
-import xxrexraptorxx.toolupgrades.main.ModItems;
+import xxrexraptorxx.toolupgrades.registry.ModItems;
 
 public class ItemBasic extends Item {
 
