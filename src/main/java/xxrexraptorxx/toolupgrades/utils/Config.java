@@ -1,25 +1,23 @@
 package xxrexraptorxx.toolupgrades.utils;
 
-import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
+import net.neoforged.fml.ModLoadingContext;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
-@Mod.EventBusSubscriber
 public class Config {
 
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_WORLD = "world";
 
-    public static ForgeConfigSpec SERVER_CONFIG;
-    public static ForgeConfigSpec CLIENT_CONFIG;
+    public static ModConfigSpec SERVER_CONFIG;
+    public static ModConfigSpec CLIENT_CONFIG;
 
-    public static ForgeConfigSpec.BooleanValue UPDATE_CHECKER;
-    public static ForgeConfigSpec.BooleanValue PATREON_REWARDS;
+    public static ModConfigSpec.BooleanValue UPDATE_CHECKER;
+    public static ModConfigSpec.BooleanValue PATREON_REWARDS;
 
-    public static ForgeConfigSpec.BooleanValue PASSIVE_ENCHANTING;
-    public static ForgeConfigSpec.IntValue BINDING_ENCHANTING_COST;
-    public static ForgeConfigSpec.IntValue ADVANCED_BINDING_ENCHANTING_COST;
+    public static ModConfigSpec.BooleanValue PASSIVE_ENCHANTING;
+    public static ModConfigSpec.IntValue BINDING_ENCHANTING_COST;
+    public static ModConfigSpec.IntValue ADVANCED_BINDING_ENCHANTING_COST;
 
 
     public static void init() {
@@ -32,7 +30,7 @@ public class Config {
     
 
     public static void initClient() {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("General settings").push(CATEGORY_GENERAL);
         UPDATE_CHECKER = builder.comment("Activate the Update-Checker").define("update-checker", true);
@@ -43,7 +41,7 @@ public class Config {
 
     
     public static void initServer() {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("World").push(CATEGORY_WORLD);
         //LOOT_GENERATOR = builder.comment("Enable or disable the dungeon loot generator").define("loot_generator", true);
