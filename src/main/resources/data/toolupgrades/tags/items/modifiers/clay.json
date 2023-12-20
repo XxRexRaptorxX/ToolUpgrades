@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+  [
+    "toolupgrades:modifier_clay",
+    "toolupgrades:modifier_advanced_clay"
+  ]
+}

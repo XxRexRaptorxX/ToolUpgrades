@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "toolupgrades:modifier_advanced_blaze_powder",
+    "toolupgrades:modifier_advanced_glowstone",
+    "toolupgrades:modifier_advanced_redstone",
+    "toolupgrades:modifier_advanced_sugar",
+    "toolupgrades:modifier_advanced_bone",
+    "toolupgrades:modifier_advanced_clay",
+    "toolupgrades:modifier_advanced_slime",
+    "toolupgrades:modifier_advanced_ink",
+    "toolupgrades:modifier_advanced_lapis",
+    "toolupgrades:modifier_advanced_gun_powder"
+  ]
+}

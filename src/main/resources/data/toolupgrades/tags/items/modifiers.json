@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "#toolupgrades:modifiers/blaze_powder",
+    "#toolupgrades:modifiers/glowstone",
+    "#toolupgrades:modifiers/redstone",
+    "#toolupgrades:modifiers/sugar",
+    "#toolupgrades:modifiers/bone",
+    "#toolupgrades:modifiers/clay",
+    "#toolupgrades:modifiers/slime",
+    "#toolupgrades:modifiers/ink",
+    "#toolupgrades:modifiers/lapis",
+    "#toolupgrades:modifiers/gunpowder",
+    "#toolupgrades:modifiers/cursed",
+    "#toolupgrades:modifiers/blank"
+  ]
+}
