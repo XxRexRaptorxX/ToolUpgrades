@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_blank"
+    },
+    {
+      "item": "toolupgrades:paste_blaze_powder"
+    }
+  ],
+  
+  "result": {
+    "id": "toolupgrades:modifier_blaze_powder"
+  }
+}

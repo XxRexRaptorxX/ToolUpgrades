@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#c:pastes/blaze_powder",
+    "#c:pastes/glowstone",
+    "#c:pastes/redstone",
+    "#c:pastes/sugar",
+    "#c:pastes/bone",
+    "#c:pastes/clay",
+    "#c:pastes/slime",
+    "#c:pastes/ink",
+    "#c:pastes/lapis",
+    "#c:pastes/gunpowder"
+  ]
+}

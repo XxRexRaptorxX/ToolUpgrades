@@ -1,5 +1,7 @@
 package xxrexraptorxx.toolupgrades.main;
 
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,10 +19,10 @@ public class ToolUpgrades {
     public static final Logger LOGGER = LogManager.getLogger();
 
 
-    public ToolUpgrades() {
-        Config.init();
-        ModItems.init();
-        CreativeModeTabs.init();
+    public ToolUpgrades(IEventBus bus, ModContainer container) {
+        Config.init(container);
+        ModItems.init(bus);
+        CreativeModeTabs.init(bus);
     }
 
 }

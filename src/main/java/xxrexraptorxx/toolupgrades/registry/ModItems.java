@@ -1,7 +1,6 @@
 package xxrexraptorxx.toolupgrades.registry;
 
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.toolupgrades.items.ItemBasic;
@@ -13,8 +12,7 @@ public class ModItems {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(References.MODID);
 
 
-    public static void init() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+    public static void init(IEventBus bus) {
         ITEMS.register(bus);
     }
 

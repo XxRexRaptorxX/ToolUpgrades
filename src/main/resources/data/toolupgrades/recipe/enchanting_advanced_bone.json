@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_advanced_bone"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+        "minecraft:stored_enchantments": {
+              "minecraft:sweeping": 3
+        }
+    }
+  }
+}

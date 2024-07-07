@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_slime"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+        "minecraft:stored_enchantments": {
+              "minecraft:protection": 2
+        }
+    }
+  }
+}

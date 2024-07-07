@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_cursed"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+        "minecraft:stored_enchantments": {
+              "minecraft:vanishing_curse": 1
+        }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "modifier_blank",
+  "pattern": [
+  
+    " X ",
+    "XOX",
+    " X "
+  
+  ],
+  
+  "key": {
+    "X": {
+      "tag": "c:gems/diamond"
+    },
+    "O": {
+      "item": "toolupgrades:enchanted_binding"
+    }
+  },
+  
+  
+  "result": {
+    "id": "toolupgrades:modifier_blank"
+  }
+}

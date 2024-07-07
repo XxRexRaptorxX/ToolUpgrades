@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "toolupgrades:modifier_blaze_powder"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+        "minecraft:stored_enchantments": {
+              "minecraft:fire_aspect": 1
+        }
+    }
+  }
+}

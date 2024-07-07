@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "toolupgrades:modifier_advanced_redstone"
+  },
+
+  "result": {
+    "id": "toolupgrades:modifier_advanced_blank" },
+  "experience": 0,
+  "cookingTime": 100
+}

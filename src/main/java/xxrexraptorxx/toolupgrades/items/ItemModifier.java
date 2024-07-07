@@ -2,16 +2,15 @@ package xxrexraptorxx.toolupgrades.items;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.level.Level;
 import xxrexraptorxx.toolupgrades.registry.ModItems;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemModifier extends Item {
@@ -32,7 +31,7 @@ public class ItemModifier extends Item {
 
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flags) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         if(this == ModItems.MODIFIER_BLANK.get() || this == ModItems.MODIFIER_ADVANCED_BLANK.get()) {
             tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "Bind effects on it..."));
 
@@ -45,12 +44,12 @@ public class ItemModifier extends Item {
 
         } else if (this == ModItems.MODIFIER_CLAY.get() || this == ModItems.MODIFIER_ADVANCED_CLAY.get()) {
             tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.UNBREAKING)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.INFINITY_ARROWS)));
+            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.INFINITY)));
 
 
         } else if (this == ModItems.MODIFIER_GLOWSTONE.get() || this == ModItems.MODIFIER_ADVANCED_GLOWSTONE.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.BLOCK_FORTUNE)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.MOB_LOOTING)));
+            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.FORTUNE)));
+            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.LOOTING)));
 
 
         } else if (this == ModItems.MODIFIER_GUNPOWDER.get() || this == ModItems.MODIFIER_ADVANCED_GUNPOWDER.get()) {
@@ -68,10 +67,10 @@ public class ItemModifier extends Item {
 
         } else if (this == ModItems.MODIFIER_SLIME.get() || this == ModItems.MODIFIER_ADVANCED_SLIME.get()) {
             tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.SILK_TOUCH)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.ALL_DAMAGE_PROTECTION)));
+            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.PROTECTION)));
 
         } else if (this == ModItems.MODIFIER_SUGAR.get() || this == ModItems.MODIFIER_ADVANCED_SUGAR.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.BLOCK_EFFICIENCY)));
+            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.EFFICIENCY)));
             tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.DEPTH_STRIDER)));
 
         } else if (this == ModItems.MODIFIER_CURSED.get()) {
@@ -83,8 +82,10 @@ public class ItemModifier extends Item {
     }
 
 
-    private static String fixEnchantmentName(Enchantment enchantment) {
-        return enchantment.getFullname(0).getString().replaceAll("enchantment.level.0", "");
+    private static String fixEnchantmentName(ResourceKey<Enchantment> enchantment) {
+        String name = enchantment.location().getPath().replace("_", " ");
+
+        return name.substring(0, 1).toUpperCase() + name.substring(1);
     }
 
 }
