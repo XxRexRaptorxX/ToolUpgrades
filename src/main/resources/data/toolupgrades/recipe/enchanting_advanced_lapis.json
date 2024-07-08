@@ -9,14 +9,13 @@
       "item": "minecraft:book"
     }
   ],
-  
+
   "result": {
     "id": "minecraft:enchanted_book",
     "components": {
         "minecraft:stored_enchantments": {
               "minecraft:sharpness": 4
-              } 
-         ]
-       }
+        }
+   }
   }
 }

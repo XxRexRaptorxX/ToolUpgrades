@@ -18,8 +18,8 @@
     "components": {
         "minecraft:stored_enchantments": {
               "minecraft:infinity": 1
-              }
-             ]
-           }
+        }
+
+   }
   }
 }
