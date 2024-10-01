@@ -11,7 +11,7 @@ import xxrexraptorxx.toolupgrades.utils.Config;
 
 /**
  * @author XxRexRaptorxX (RexRaptor)
- * @projectPage https://www.curseforge.com/minecraft/mc-mods/tool-upgrades
+ * @projectPage <a href="https://www.curseforge.com/minecraft/mc-mods/tool-upgrades">...</a>
  **/
 @Mod(References.MODID)
 public class ToolUpgrades {
