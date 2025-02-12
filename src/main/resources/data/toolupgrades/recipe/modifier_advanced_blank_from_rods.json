@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:rods/diamond"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "group": "modifier_advanced_blank",
+  "pattern": [
+  
+    " X ",
+    "XOX",
+    " X "
+    
+  ],
+  
+  "key": {
+    "X": "#c:rods/diamond",
+    "O": "toolupgrades:enchanted_advanced_binding"
+  },
+  
+  
+  "result": {
+    "id": "toolupgrades:modifier_advanced_blank"
+  }
+}
