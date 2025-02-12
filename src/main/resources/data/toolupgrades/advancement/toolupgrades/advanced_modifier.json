@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "toolupgrades:modifier_advanced_blank"
+            "id": "toolupgrades:modifier_advanced_blank"
         },
         "title": {
             "translate": "advancements.toolupgrades.advanced_modifier.title"
@@ -20,7 +20,7 @@
             "conditions": {
                 "items": [
                     {
-                        "id": "toolupgrades:modifier_advanced_blank"
+                        "item": "toolupgrades:modifier_advanced_blank"
                     }
                 ]
             }
