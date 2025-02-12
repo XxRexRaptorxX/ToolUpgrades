@@ -20,7 +20,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "toolupgrades:modifier_advanced_blank"
+                        "id": "toolupgrades:modifier_advanced_blank"
                     }
                 ]
             }
