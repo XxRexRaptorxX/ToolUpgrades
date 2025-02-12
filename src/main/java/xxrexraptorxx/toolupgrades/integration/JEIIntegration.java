@@ -35,7 +35,7 @@ public class JEIIntegration implements IModPlugin {
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED.get()));
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED_ADVANCED.get()));
 
-            registry.addIngredientInfo(bindings, VanillaTypes.ITEM_STACK, Component.translatable("message.toolupgrades.enchant_bindings_jei_desc"));
+            registry.addIngredientInfo(bindings, VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".enchant_bindings_jei_desc"));
         }
     }
 }

@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_lapis"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_lapis",
+    "minecraft:book"
+
   ],
   
   "result": {

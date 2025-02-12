@@ -9,15 +9,9 @@
   ],
   
   "key": {
-    "O": {
-      "item": "minecraft:water_bucket"
-    },
-    "X": {
-      "item": "minecraft:nether_wart"
-    },
-    "#": {
-      "tag": "c:dusts/glowstone"
-    }
+    "O": "minecraft:water_bucket",
+    "X": "minecraft:nether_wart",
+    "#": "#c:dusts/glowstone"
   },
   
   

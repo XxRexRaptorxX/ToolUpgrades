@@ -10,12 +10,8 @@
   ],
   
   "key": {
-    "O": {
-      "item": "toolupgrades:redstone_binding"
-    },
-    "X": {
-      "tag": "c:nuggets/gold"
-    }
+    "O": "toolupgrades:redstone_binding",
+    "X": "#c:nuggets/gold"
   },
   
   

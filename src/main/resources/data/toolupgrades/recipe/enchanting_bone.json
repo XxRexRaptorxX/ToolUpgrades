@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_bone"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_bone",
+    "minecraft:book"
+
   ],
   
   "result": {

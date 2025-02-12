@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_sugar"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_sugar",
+    "minecraft:book"
+
   ],
   
   "result": {

@@ -2,15 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_advanced_gun_powder"
-    },
-    {
-      "item": "minecraft:nether_wart"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_advanced_gun_powder",
+    "minecraft:nether_wart",
+    "minecraft:book"
+
   ],
   
   "result": {

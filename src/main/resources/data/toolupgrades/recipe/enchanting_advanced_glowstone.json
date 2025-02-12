@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_advanced_glowstone"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_advanced_glowstone",
+    "minecraft:book"
+
   ],
   
   "result": {

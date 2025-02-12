@@ -1,11 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "toolupgrades:modifier_ink"
-  },
+  "ingredient": "toolupgrades:modifier_ink",
 
   "result": {
-    "id": "toolupgrades:modifier_blank" },
+    "id": "toolupgrades:modifier_blank"
+  },
   "experience": 0,
   "cookingTime": 100
 }

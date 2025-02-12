@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_blank"
-    },
-    {
-      "item": "toolupgrades:paste_slime"
-    }
+    "toolupgrades:modifier_blank",
+    "toolupgrades:paste_slime"
+
   ],
   
   "result": {

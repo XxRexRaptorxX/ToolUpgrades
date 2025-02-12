@@ -9,15 +9,9 @@
   ],
   
   "key": {
-    "O": {
-      "item": "minecraft:water_bucket"
-    },
-    "X": {
-      "item": "minecraft:nether_wart"
-    },
-    "#": {
-      "item": "minecraft:clay_ball"
-    }
+    "O": "minecraft:water_bucket",
+    "X": "minecraft:nether_wart",
+    "#": "minecraft:clay_ball"
   },
   
   

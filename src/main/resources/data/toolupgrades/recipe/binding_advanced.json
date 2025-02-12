@@ -10,15 +10,9 @@
   ],
   
   "key": {
-    "O": {
-      "item": "minecraft:redstone_torch"
-    },
-    "X": {
-      "item": "minecraft:redstone"
-    },
-    "#": {
-      "tag": "c:ingots/gold"
-    }
+    "O": "minecraft:redstone_torch",
+    "X": "minecraft:redstone",
+    "#": "#c:ingots/gold"
   },
   
   

@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:redstone_binding"
-    },
-    {
-      "item": "minecraft:enchanted_book"
-    }
+    "toolupgrades:redstone_binding",
+    "minecraft:enchanted_book"
+
   ],
   
   "result": {

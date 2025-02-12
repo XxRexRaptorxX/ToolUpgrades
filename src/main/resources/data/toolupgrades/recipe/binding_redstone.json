@@ -9,15 +9,9 @@
   ],
   
   "key": {
-    "O": {
-      "item": "minecraft:redstone_torch"
-    },
-    "X": {
-      "tag": "c:dusts/redstone"
-    },
-    "#": {
-      "tag": "c:ingots/iron"
-    }
+    "O": "minecraft:redstone_torch",
+    "X": "#c:dusts/redstone",
+    "#": "#c:ingots/iron"
   },
   
   

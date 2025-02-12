@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:advanced_binding"
-    },
-    {
-      "item": "minecraft:enchanted_book"
-    }
+    "toolupgrades:advanced_binding",
+    "minecraft:enchanted_book"
+
   ],
   
   "result": {

@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_cursed"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_cursed",
+    "minecraft:book"
+
   ],
   
   "result": {

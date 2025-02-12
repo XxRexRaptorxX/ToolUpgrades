@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_clay"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_clay",
+    "minecraft:book"
+
   ],
   
   "result": {

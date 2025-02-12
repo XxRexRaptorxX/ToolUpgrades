@@ -1,11 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "toolupgrades:modifier_gun_powder"
-  },
+  "ingredient": "toolupgrades:modifier_gun_powder",
 
   "result": {
-    "id": "toolupgrades:modifier_blank" },
+    "id": "toolupgrades:modifier_blank"
+  },
   "experience": 0,
   "cookingTime": 100
 }

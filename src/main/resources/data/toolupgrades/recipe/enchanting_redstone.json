@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_redstone"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_redstone",
+    "minecraft:book"
+
   ],
   
   "result": {

@@ -15,8 +15,8 @@ import java.util.List;
 
 public class ItemModifier extends Item {
 
-    public ItemModifier() {
-        super(new Properties()
+    public ItemModifier(Item.Properties properties) {
+        super(properties
             .rarity(Rarity.UNCOMMON)
             .stacksTo(16)
         );

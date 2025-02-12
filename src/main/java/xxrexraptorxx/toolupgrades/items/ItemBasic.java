@@ -8,9 +8,8 @@ import xxrexraptorxx.toolupgrades.registry.ModItems;
 
 public class ItemBasic extends Item {
 
-    public ItemBasic() {
-        super(new Properties()
-        );
+    public ItemBasic(Item.Properties properties) {
+        super(properties);
     }
 
 

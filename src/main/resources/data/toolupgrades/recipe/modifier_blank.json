@@ -3,19 +3,15 @@
   "group": "modifier_blank",
   "pattern": [
   
-    " X ",
+    "XXX",
     "XOX",
-    " X "
+    "XXX"
   
   ],
   
   "key": {
-    "X": {
-      "tag": "c:gems/diamond"
-    },
-    "O": {
-      "item": "toolupgrades:enchanted_binding"
-    }
+    "X": "#c:gems/diamond",
+    "O": "toolupgrades:enchanted_binding"
   },
   
   

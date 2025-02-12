@@ -9,15 +9,9 @@
   ],
   
   "key": {
-    "O": {
-      "item": "minecraft:water_bucket"
-    },
-    "X": {
-      "item": "minecraft:nether_wart"
-    },
-    "#": {
-      "item": "minecraft:ink_sac"
-    }
+    "O": "minecraft:water_bucket",
+    "X": "minecraft:nether_wart",
+    "#": "minecraft:ink_sac"
   },
   
   

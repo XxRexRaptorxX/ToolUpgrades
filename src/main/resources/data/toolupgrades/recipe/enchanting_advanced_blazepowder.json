@@ -2,12 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
   
-    {
-      "item": "toolupgrades:modifier_advanced_blaze_powder"
-    },
-    {
-      "item": "minecraft:book"
-    }
+    "toolupgrades:modifier_advanced_blaze_powder",
+    "minecraft:book"
+
   ],
   
   "result": {
