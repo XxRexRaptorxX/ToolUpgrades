@@ -7,11 +7,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import xxrexraptorxx.toolupgrades.registry.ModItems;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class ItemModifier extends Item {
 
@@ -31,53 +32,53 @@ public class ItemModifier extends Item {
 
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> list, TooltipFlag flag) {
         if(this == ModItems.MODIFIER_BLANK.get() || this == ModItems.MODIFIER_ADVANCED_BLANK.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "Bind effects on it..."));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "Bind effects on it..."));
 
         } else if (this == ModItems.MODIFIER_BLAZE.get() || this == ModItems.MODIFIER_ADVANCED_BLAZE.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.FIRE_ASPECT)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.FIRE_PROTECTION)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.FIRE_ASPECT)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.FIRE_PROTECTION)));
 
         } else if (this == ModItems.MODIFIER_BONE.get() || this == ModItems.MODIFIER_ADVANCED_BONE.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.SWEEPING_EDGE)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.SWEEPING_EDGE)));
 
         } else if (this == ModItems.MODIFIER_CLAY.get() || this == ModItems.MODIFIER_ADVANCED_CLAY.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.UNBREAKING)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.INFINITY)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.UNBREAKING)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.INFINITY)));
 
 
         } else if (this == ModItems.MODIFIER_GLOWSTONE.get() || this == ModItems.MODIFIER_ADVANCED_GLOWSTONE.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.FORTUNE)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.LOOTING)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.FORTUNE)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.LOOTING)));
 
 
         } else if (this == ModItems.MODIFIER_GUNPOWDER.get() || this == ModItems.MODIFIER_ADVANCED_GUNPOWDER.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.KNOCKBACK)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.BLAST_PROTECTION)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.KNOCKBACK)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.BLAST_PROTECTION)));
 
         } else if (this == ModItems.MODIFIER_INK.get() || this == ModItems.MODIFIER_ADVANCED_INK.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.THORNS)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.THORNS)));
 
         } else if (this == ModItems.MODIFIER_LAPIS.get() || this == ModItems.MODIFIER_ADVANCED_LAPIS.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.SHARPNESS)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.SHARPNESS)));
 
         } else if (this == ModItems.MODIFIER_REDSTONE.get() || this == ModItems.MODIFIER_ADVANCED_REDSTONE.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.MENDING)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.MENDING)));
 
         } else if (this == ModItems.MODIFIER_SLIME.get() || this == ModItems.MODIFIER_ADVANCED_SLIME.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.SILK_TOUCH)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.PROTECTION)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.SILK_TOUCH)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.PROTECTION)));
 
         } else if (this == ModItems.MODIFIER_SUGAR.get() || this == ModItems.MODIFIER_ADVANCED_SUGAR.get()) {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.EFFICIENCY)));
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.DEPTH_STRIDER)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.EFFICIENCY)));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.DEPTH_STRIDER)));
 
         } else if (this == ModItems.MODIFIER_CURSED.get()) {
-            tooltip.add(Component.literal( ChatFormatting.OBFUSCATED + "+ Curses").withStyle(ChatFormatting.DARK_PURPLE));
+            list.accept(Component.literal( ChatFormatting.OBFUSCATED + "+ Curses").withStyle(ChatFormatting.DARK_PURPLE));
 
         } else {
-            tooltip.add(Component.literal(ChatFormatting.DARK_PURPLE + "???"));
+            list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "???"));
         }
     }
 

@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.util.TriState;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -30,21 +31,17 @@ import net.neoforged.fml.ModList;
 import net.neoforged.fml.VersionChecker;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
-import net.neoforged.neoforge.common.util.TriState;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import xxrexraptorxx.toolupgrades.main.References;
 import xxrexraptorxx.toolupgrades.main.ToolUpgrades;
 import xxrexraptorxx.toolupgrades.registry.ModItems;
 
-import java.net.MalformedURLException;
 import java.net.URI;
-import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
-import java.util.Scanner;
 import java.util.concurrent.CompletableFuture;
 
 
@@ -70,7 +67,7 @@ public class Events {
 
                     if (versionCheckResult.status() == VersionChecker.Status.OUTDATED || versionCheckResult.status() == VersionChecker.Status.BETA_OUTDATED) {
                         MutableComponent url = Component.literal(ChatFormatting.GREEN + "Click here to update!")
-                                .withStyle(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, References.URL)));
+                                .withStyle(style -> style.withClickEvent(new ClickEvent.OpenUrl(URI.create(References.URL))));
 
                         player.displayClientMessage(Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"), false);
                         player.displayClientMessage(url, false);
@@ -176,39 +173,6 @@ public class Events {
         star.set(DataComponents.CUSTOM_NAME, Component.literal("Elite Star"));
         player.getInventory().add(star);
     }
-
-
-    /**
-     * Tests if a player is a supporter
-     *
-     * @param url url to a file that contains the supporter names
-     * @param player ingame player
-     * @return true/false
-     */
-    private static boolean SupporterCheck(URL url, Player player) {
-        try {
-            Scanner scanner = new Scanner(url.openStream());
-            List<String> supporterList = scanner.tokens().toList();
-
-            for (String name: supporterList) {
-                //test if player is in supporter list
-                if (player.getName().getString().equals(name)) {
-                    return true;
-                }
-            }
-
-            scanner.close();
-
-        } catch (MalformedURLException e) {
-            ToolUpgrades.LOGGER.error("Supporter list URL not found! >>{}", url);
-
-        } catch (Exception e) {
-            ToolUpgrades.LOGGER.error("An unexpected error occurred while checking supporter list", e);
-        }
-
-        return false;
-    }
-
 
 
     /** ENCHANTER **/
