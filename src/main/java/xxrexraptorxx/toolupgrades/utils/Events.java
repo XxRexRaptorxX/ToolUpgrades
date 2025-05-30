@@ -21,94 +21,65 @@ import xxrexraptorxx.toolupgrades.registry.ModItems;
 @EventBusSubscriber(modid = References.MODID, bus = EventBusSubscriber.Bus.GAME)
 public class Events {
 
-    /** ENCHANTER **/
+
     @SubscribeEvent
     public static void enchantBinding(PlayerInteractEvent.RightClickBlock event) {
+        if (!Config.getPassiveEnchanting()) return;
+
         Item item = event.getItemStack().getItem();
         Level world = event.getLevel();
         BlockPos pos = event.getPos();
         Player player = event.getEntity();
 
-        if(Config.getPassiveEnchanting()) {
-            if (item == ModItems.BINDING_REDSTONE.get()) {
-                if (world.getBlockState(pos).getBlock() == Blocks.BOOKSHELF) {
+        // Check if it's a binding item
+        boolean isNormalBinding = item == ModItems.BINDING_REDSTONE.get();
+        boolean isAdvancedBinding = item == ModItems.BINDING_ADVANCED.get();
 
-                    if (player.experienceLevel >= Config.getBindingEnchantingCost()) {
+        if (!isNormalBinding && !isAdvancedBinding) return;
 
-                        world.playSound((Player) null, pos, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 0.5F, world.random.nextFloat() * 0.15F + 0.F);
-
-                        for (int i = 0; i < 2; i++) {
-                            world.addParticle(ParticleTypes.LAVA, pos.getX() + 0.5F, pos.getY() + 1.3F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 1.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() - 0.1F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() - 0.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 1.1F, 0.0D, 0.0D, 0.0D);
-                        }
-
-                        if (!world.isClientSide) {
-                            event.getItemStack().shrink(1);
-                            player.onEnchantmentPerformed(null, Config.getBindingEnchantingCost());
-                            player.addItem(new ItemStack(ModItems.BINDING_ENCHANTED.get()));
-
-                            event.setUseBlock(TriState.FALSE);
-                            event.setUseItem(TriState.FALSE);
-                            event.setCanceled(true);
-                        }
-
-                    } else {
-                        if (world.isClientSide)
-                            player.displayClientMessage(FormattingHelper.setModLangComponent("message", References.MODID, "not_enough_levels"), true);
-                    }
-                } else {
-                    if (world.isClientSide)
-                        player.displayClientMessage(FormattingHelper.setModLangComponent("message", References.MODID, "wrong_block"), true);
-                }
+        // Must be used on bookshelf
+        if (world.getBlockState(pos).getBlock() != Blocks.BOOKSHELF) {
+            if (world.isClientSide) {
+                player.displayClientMessage(FormattingHelper.setModLangComponent("message", References.MODID, "wrong_block"), true);
             }
+            return;
         }
-    }
 
-
-    @SubscribeEvent
-    public static void enchantAdvancedBinding(PlayerInteractEvent.RightClickBlock event) {
-        Item item = event.getItemStack().getItem();
-        Level world = event.getLevel();
-        BlockPos pos = event.getPos();
-        Player player = event.getEntity();
-
-        if(Config.getPassiveEnchanting()) {
-            if (item == ModItems.BINDING_ADVANCED.get()) {
-                if (world.getBlockState(pos).getBlock() == Blocks.BOOKSHELF) {
-
-                    if (player.experienceLevel >= Config.getAdvancedBindingEnchantingCost()) {
-
-                        world.playSound((Player) null, pos, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 0.5F, world.random.nextFloat() * 0.15F + 0.F);
-
-                        for (int i = 0; i < 2; i++) {
-                            world.addParticle(ParticleTypes.LAVA, pos.getX() + 0.5F, pos.getY() + 1.3F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 1.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() - 0.1F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() - 0.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 1.1F, 0.0D, 0.0D, 0.0D);
-                        }
-
-                        if (!world.isClientSide) {
-                            event.getItemStack().shrink(1);
-                            player.onEnchantmentPerformed(null, Config.getAdvancedBindingEnchantingCost());
-                            player.addItem(new ItemStack(ModItems.BINDING_ENCHANTED_ADVANCED.get()));
-
-                            event.setUseBlock(TriState.FALSE);
-                            event.setUseItem(TriState.FALSE);
-                            event.setCanceled(true);
-                        }
-                    } else {
-                        if (world.isClientSide)
-                            player.displayClientMessage(FormattingHelper.setModLangComponent("message",References.MODID, "not_enough_levels"), true);
-                    }
-                } else {
-                    if (world.isClientSide)
-                        player.displayClientMessage(FormattingHelper.setModLangComponent("message",References.MODID, "wrong_block"), true);
-                }
+        // Check experience cost
+        int cost = isNormalBinding ? Config.getBindingEnchantingCost() : Config.getAdvancedBindingEnchantingCost();
+        if (player.experienceLevel < cost) {
+            if (world.isClientSide) {
+                player.displayClientMessage(FormattingHelper.setModLangComponent("message", References.MODID, "not_enough_levels"), true);
             }
+            return;
+        }
+
+        // Play sound and particles
+        world.playSound(null, pos, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 0.5F, world.random.nextFloat() * 0.15F + 0.85F);
+
+        for (int i = 0; i < 2; i++) {
+            world.addParticle(ParticleTypes.LAVA, pos.getX() + 0.5F, pos.getY() + 1.3F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
+            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 1.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
+            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() - 0.1F, 0.0D, 0.0D, 0.0D);
+            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() - 0.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
+            world.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 1.1F, 0.0D, 0.0D, 0.0D);
+        }
+
+        // Server-side processing
+        if (!world.isClientSide) {
+            event.getItemStack().shrink(1);
+            player.onEnchantmentPerformed(null, cost);
+
+            // Add the correct enchanted item
+            if (isNormalBinding) {
+                player.addItem(new ItemStack(ModItems.BINDING_ENCHANTED.get()));
+            } else {
+                player.addItem(new ItemStack(ModItems.BINDING_ENCHANTED_ADVANCED.get()));
+            }
+
+            event.setUseBlock(TriState.FALSE);
+            event.setUseItem(TriState.FALSE);
+            event.setCanceled(true);
         }
     }
 
