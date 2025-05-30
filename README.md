@@ -6,6 +6,15 @@
 
 ![Logo](http://i.imgur.com/G8wSv2y.png)
 
+-----
+
+## 🗃️ Dependencies
+
+- **Magma Core**
+    - [CurseForge][cf_magmacore] | [Modrinth][mr_magmacore]
+
+-----
+
 ## 📖 Description
 
 Upgrade your tools, weapons and armor with modifiers!
@@ -21,5 +30,7 @@ Upgrade your tools, weapons and armor with modifiers!
 All rights reserved.
 
 [cf_mod]: https://www.curseforge.com/minecraft/mc-mods/tool-upgrades
-
 [mr_mod]: https://modrinth.com/mod/tool-upgrades
+
+[cf_magmacore]: https://www.curseforge.com/minecraft/mc-mods/magma-core
+[mr_magmacore]: https://modrinth.com/mod/magma-core

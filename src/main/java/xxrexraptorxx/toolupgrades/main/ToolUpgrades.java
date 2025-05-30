@@ -20,9 +20,11 @@ public class ToolUpgrades {
 
 
     public ToolUpgrades(IEventBus bus, ModContainer container) {
-        Config.init(container);
         ModItems.init(bus);
         CreativeModeTabs.init(bus);
+
+        ConfigHelper.registerConfigs(container, References.MODID, false, null, Config.CLIENT_CONFIG);
+        ModRegistry.register(References.MODID, References.NAME, References.URL);
     }
 
 }

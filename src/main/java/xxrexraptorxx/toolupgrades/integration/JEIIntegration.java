@@ -5,9 +5,9 @@ import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.runtime.IIngredientManager;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import xxrexraptorxx.magmacore.utils.FormattingHelper;
 import xxrexraptorxx.toolupgrades.main.References;
 import xxrexraptorxx.toolupgrades.registry.ModItems;
 import xxrexraptorxx.toolupgrades.utils.Config;
@@ -35,7 +35,7 @@ public class JEIIntegration implements IModPlugin {
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED.get()));
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED_ADVANCED.get()));
 
-            registry.addIngredientInfo(bindings, VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".enchant_bindings_jei_desc"));
+            registry.addIngredientInfo(bindings, VanillaTypes.ITEM_STACK, FormattingHelper.setModLangComponent("message", References.MODID, "enchant_bindings_jei_desc"));
         }
     }
 }

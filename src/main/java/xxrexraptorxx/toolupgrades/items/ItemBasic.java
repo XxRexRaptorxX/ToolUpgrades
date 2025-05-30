@@ -13,6 +13,7 @@ public class ItemBasic extends Item {
         super(properties);
     }
 
+
     @Override
     public int getBurnTime(ItemStack stack, @Nullable RecipeType<?> recipeType, FuelValues fuelValues) {
         if(this == ModItems.PASTE_BLAZE.get()) {

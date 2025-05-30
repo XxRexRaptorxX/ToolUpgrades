@@ -21,7 +21,6 @@ public class ItemModifier extends Item {
             .rarity(Rarity.UNCOMMON)
             .stacksTo(16)
         );
-
     }
 
 
