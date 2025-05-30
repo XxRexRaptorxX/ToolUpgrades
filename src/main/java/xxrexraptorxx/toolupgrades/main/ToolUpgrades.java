@@ -1,5 +1,6 @@
 package xxrexraptorxx.toolupgrades.main;
 
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -29,4 +30,12 @@ public class ToolUpgrades {
         ModRegistry.register(References.MODID, References.NAME, References.URL);
     }
 
+
+    @Mod(value = References.MODID, dist = Dist.CLIENT)
+    public static class ToolUpgradesClient {
+
+        public ToolUpgradesClient(ModContainer container) {
+            ConfigHelper.registerIngameConfig(container);
+        }
+    }
 }

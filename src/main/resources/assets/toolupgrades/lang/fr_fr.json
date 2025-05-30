@@ -1,7 +1,23 @@
 {
 	"_comment": "translated by PasteKBrain",
-	
+
+    "toolupgrades.configuration.title": "ToolUpgrades Configuration",
+    "toolupgrades.configuration.section.toolupgrades.server.toml": "Server Settings",
+    "toolupgrades.configuration.section.toolupgrades.server.toml.title": "Server Options",
+
+    "toolupgrades.configuration.enchanting": "Enchanting Options",
+    "toolupgrades.configuration.enchanting.button": "Enchanting Settings",
+    "toolupgrades.configuration.enchanting.tooltip": "Configure enchanting settings",
+
+    "toolupgrades.configuration.advanced_binding_enchanting_cost": "Advanced Binding Enchanting Cost",
+    "toolupgrades.configuration.advanced_binding_enchanting_cost.tooltip": "The amount of experience levels you need to enchant a advanced binding on a bookshelf",
+    "toolupgrades.configuration.binding_enchanting_cost": "Binding Enchanting Cost",
+    "toolupgrades.configuration.binding_enchanting_cost.tooltip": "The amount of experience levels you need to enchant a binding on a bookshelf",
+    "toolupgrades.configuration.passive_enchanting": "Passive Enchanting",
+    "toolupgrades.configuration.passive_enchanting.tooltip": "Enable or disable enchanting of bindings on a bookshelf",
+
     "itemGroup.toolupgrades_tab": "Tool Upgrades",
+
     "message.toolupgrades.not_enough_levels": "Vous n'avez pas suffisamment d'expérience!",
     "message.toolupgrades.wrong_block": "À utiliser sur une bibliothèque...",
     "message.toolupgrades.enchant_bindings_jei_desc": "Enchanter votre embase avec suffisamment de niveaux avec une bibliothèque.",
