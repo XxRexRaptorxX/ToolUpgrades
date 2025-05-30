@@ -1,4 +1,4 @@
-package xxrexraptorxx.toolupgrades.integration;
+package xxrexraptorxx.toolupgrades.compat;
 
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;

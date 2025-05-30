@@ -1,4 +1,4 @@
-package xxrexraptorxx.toolupgrades.integration;
+package xxrexraptorxx.toolupgrades.compat;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
