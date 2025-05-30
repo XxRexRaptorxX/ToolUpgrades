@@ -29,11 +29,11 @@ public class Events {
         BlockPos pos = event.getPos();
         Player player = event.getEntity();
 
-        if(Config.PASSIVE_ENCHANTING.get()) {
+        if(Config.getPassiveEnchanting()) {
             if (item == ModItems.BINDING_REDSTONE.get()) {
                 if (world.getBlockState(pos).getBlock() == Blocks.BOOKSHELF) {
 
-                    if (player.experienceLevel >= Config.BINDING_ENCHANTING_COST.get()) {
+                    if (player.experienceLevel >= Config.getBindingEnchantingCost()) {
 
                         world.playSound((Player) null, pos, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 0.5F, world.random.nextFloat() * 0.15F + 0.F);
 
@@ -47,7 +47,7 @@ public class Events {
 
                         if (!world.isClientSide) {
                             event.getItemStack().shrink(1);
-                            player.onEnchantmentPerformed(null, Config.BINDING_ENCHANTING_COST.get());
+                            player.onEnchantmentPerformed(null, Config.getBindingEnchantingCost());
                             player.addItem(new ItemStack(ModItems.BINDING_ENCHANTED.get()));
 
                             event.setUseBlock(TriState.FALSE);
@@ -75,11 +75,11 @@ public class Events {
         BlockPos pos = event.getPos();
         Player player = event.getEntity();
 
-        if(Config.PASSIVE_ENCHANTING.get()) {
+        if(Config.getPassiveEnchanting()) {
             if (item == ModItems.BINDING_ADVANCED.get()) {
                 if (world.getBlockState(pos).getBlock() == Blocks.BOOKSHELF) {
 
-                    if (player.experienceLevel >= Config.ADVANCED_BINDING_ENCHANTING_COST.get()) {
+                    if (player.experienceLevel >= Config.getAdvancedBindingEnchantingCost()) {
 
                         world.playSound((Player) null, pos, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 0.5F, world.random.nextFloat() * 0.15F + 0.F);
 
@@ -93,7 +93,7 @@ public class Events {
 
                         if (!world.isClientSide) {
                             event.getItemStack().shrink(1);
-                            player.onEnchantmentPerformed(null, Config.ADVANCED_BINDING_ENCHANTING_COST.get());
+                            player.onEnchantmentPerformed(null, Config.getAdvancedBindingEnchantingCost());
                             player.addItem(new ItemStack(ModItems.BINDING_ENCHANTED_ADVANCED.get()));
 
                             event.setUseBlock(TriState.FALSE);

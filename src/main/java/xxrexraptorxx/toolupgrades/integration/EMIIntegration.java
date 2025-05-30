@@ -21,7 +21,7 @@ public class EMIIntegration implements EmiPlugin {
     @Override
     public void register(EmiRegistry registry) {
 
-        if(Config.PASSIVE_ENCHANTING.get()) {
+        if(Config.getPassiveEnchanting()) {
             ArrayList<EmiIngredient> bindings = new ArrayList<EmiIngredient>();
             bindings.add(EmiStack.of(ModItems.BINDING_ENCHANTED.get()));
             bindings.add(EmiStack.of(ModItems.BINDING_ENCHANTED_ADVANCED.get()));

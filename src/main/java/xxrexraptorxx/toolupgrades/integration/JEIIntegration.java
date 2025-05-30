@@ -30,7 +30,7 @@ public class JEIIntegration implements IModPlugin {
     public void registerRecipes(IRecipeRegistration registry) {
         IIngredientManager ingredientManager = registry.getIngredientManager();
 
-        if(Config.PASSIVE_ENCHANTING.get()) {
+        if(Config.getPassiveEnchanting()) {
             ArrayList<ItemStack> bindings = new ArrayList<ItemStack>();
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED.get()));
             bindings.add(new ItemStack(ModItems.BINDING_ENCHANTED_ADVANCED.get()));

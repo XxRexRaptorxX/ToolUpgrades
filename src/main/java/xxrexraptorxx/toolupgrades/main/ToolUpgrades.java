@@ -5,6 +5,8 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import xxrexraptorxx.magmacore.config.ConfigHelper;
+import xxrexraptorxx.magmacore.main.ModRegistry;
 import xxrexraptorxx.toolupgrades.registry.CreativeModeTabs;
 import xxrexraptorxx.toolupgrades.registry.ModItems;
 import xxrexraptorxx.toolupgrades.utils.Config;
@@ -23,7 +25,7 @@ public class ToolUpgrades {
         ModItems.init(bus);
         CreativeModeTabs.init(bus);
 
-        ConfigHelper.registerConfigs(container, References.MODID, false, null, Config.CLIENT_CONFIG);
+        ConfigHelper.registerConfigs(container, References.MODID, false, Config.SERVER_CONFIG, null);
         ModRegistry.register(References.MODID, References.NAME, References.URL);
     }
 
