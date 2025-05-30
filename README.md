@@ -17,7 +17,7 @@
 
 ## 📖 Description
 
-Upgrade your tools, weapons and armor with modifiers!
+This mod adds a new way to enchant your equipment, create pastes from different materials and apply them to modifiers to assign specific enchantments to them!
 
 -----
 
