@@ -26,7 +26,7 @@ This mod adds a new way to enchant your equipment, create pastes from different 
 
 ![upgrade crafting](https://cdn.modrinth.com/data/DE7bjCuH/images/a6c803540ac2f15ebb79d1226ba240e49ddbcb5e.png)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aNBxukTArbA&t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aNBxukTArbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6ckT-5_tp8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
