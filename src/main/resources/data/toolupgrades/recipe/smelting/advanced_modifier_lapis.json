@@ -1,7 +1,6 @@
 {
   "type": "minecraft:smelting",
   "ingredient": "toolupgrades:modifier_advanced_lapis",
-
   "result": {
     "id": "toolupgrades:modifier_advanced_blank"
   },

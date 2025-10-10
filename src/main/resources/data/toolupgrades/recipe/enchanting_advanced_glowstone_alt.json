@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_advanced_glowstone",
     "minecraft:nether_wart",
     "minecraft:book"
-
   ],
-  
   "result": {
     "id": "minecraft:enchanted_book",
     "components": {
-        "minecraft:stored_enchantments": {
-              "minecraft:looting": 3
-        }
+      "minecraft:stored_enchantments": {
+        "minecraft:looting": 3
+      }
     }
   }
 }

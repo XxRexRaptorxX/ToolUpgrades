@@ -1,18 +1,15 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_lapis",
     "minecraft:book"
-
   ],
-  
   "result": {
     "id": "minecraft:enchanted_book",
     "components": {
-        "minecraft:stored_enchantments": {
-              "minecraft:sharpness": 3
-        }
+      "minecraft:stored_enchantments": {
+        "minecraft:sharpness": 3
+      }
     }
   }
 }

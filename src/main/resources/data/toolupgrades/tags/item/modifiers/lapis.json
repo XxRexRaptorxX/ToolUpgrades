@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "toolupgrades:modifier_lapis",
     "toolupgrades:modifier_advanced_lapis"
   ]

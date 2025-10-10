@@ -1,7 +1,6 @@
 {
   "type": "minecraft:smelting",
   "ingredient": "toolupgrades:modifier_ink",
-
   "result": {
     "id": "toolupgrades:modifier_blank"
   },

@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "toolupgrades:modifier_blaze_powder",
     "toolupgrades:modifier_advanced_blaze_powder"
   ]

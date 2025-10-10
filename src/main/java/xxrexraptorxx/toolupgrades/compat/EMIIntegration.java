@@ -21,12 +21,13 @@ public class EMIIntegration implements EmiPlugin {
     @Override
     public void register(EmiRegistry registry) {
 
-        if(Config.getPassiveEnchanting()) {
+        if (Config.getPassiveEnchanting()) {
             ArrayList<EmiIngredient> bindings = new ArrayList<EmiIngredient>();
             bindings.add(EmiStack.of(ModItems.BINDING_ENCHANTED.get()));
             bindings.add(EmiStack.of(ModItems.BINDING_ENCHANTED_ADVANCED.get()));
 
-            registry.addRecipe(new EmiInfoRecipe(bindings, List.of(FormattingHelper.setModLangComponent("message", References.MODID, "enchant_bindings_jei_desc")), ResourceLocation.fromNamespaceAndPath(References.MODID, "info/enchant_bindings_jei_desc")));
+            registry.addRecipe(new EmiInfoRecipe(bindings, List.of(FormattingHelper.setModLangComponent("message", References.MODID, "enchant_bindings_jei_desc")),
+                    ResourceLocation.fromNamespaceAndPath(References.MODID, "info/enchant_bindings_jei_desc")));
         }
     }
 }

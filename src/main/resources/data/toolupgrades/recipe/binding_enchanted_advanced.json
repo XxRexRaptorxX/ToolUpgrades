@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:advanced_binding",
     "minecraft:enchanted_book"
-
   ],
-  
   "result": {
     "id": "toolupgrades:enchanted_advanced_binding"
   }

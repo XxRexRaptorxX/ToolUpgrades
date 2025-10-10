@@ -2,19 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "group": "modifier_blank",
   "pattern": [
-  
     "XXX",
     "XOX",
     "XXX"
-  
   ],
-  
   "key": {
     "X": "#c:gems/diamond",
     "O": "toolupgrades:enchanted_binding"
   },
-  
-  
   "result": {
     "id": "toolupgrades:modifier_blank"
   }

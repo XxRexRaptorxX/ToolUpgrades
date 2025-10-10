@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "toolupgrades:modifier_gun_powder",
     "toolupgrades:modifier_advanced_gun_powder"
   ]

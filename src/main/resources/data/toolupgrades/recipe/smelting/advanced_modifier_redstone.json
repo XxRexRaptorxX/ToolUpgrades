@@ -1,7 +1,6 @@
 {
   "type": "minecraft:smelting",
   "ingredient": "toolupgrades:modifier_advanced_redstone",
-
   "result": {
     "id": "toolupgrades:modifier_advanced_blank"
   },

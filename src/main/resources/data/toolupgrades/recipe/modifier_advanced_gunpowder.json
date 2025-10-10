@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_advanced_blank",
     "toolupgrades:paste_gun_powder"
-
   ],
-  
   "result": {
     "id": "toolupgrades:modifier_advanced_gun_powder"
   }

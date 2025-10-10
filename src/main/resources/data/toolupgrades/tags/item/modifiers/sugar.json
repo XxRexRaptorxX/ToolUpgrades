@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "toolupgrades:modifier_sugar",
     "toolupgrades:modifier_advanced_sugar"
   ]

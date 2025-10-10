@@ -11,19 +11,14 @@
   "type": "minecraft:crafting_shaped",
   "group": "modifier_blank",
   "pattern": [
-  
     " X ",
     "XOX",
     " X "
-    
   ],
-  
   "key": {
     "X": "#c:sticks/diamond",
     "O": "toolupgrades:enchanted_binding"
   },
-  
-  
   "result": {
     "id": "toolupgrades:modifier_blank"
   }

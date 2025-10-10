@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_blank",
     "toolupgrades:paste_sugar"
-
   ],
-  
   "result": {
     "id": "toolupgrades:modifier_sugar"
   }

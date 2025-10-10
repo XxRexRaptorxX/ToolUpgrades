@@ -18,7 +18,7 @@ import xxrexraptorxx.toolupgrades.main.References;
 import xxrexraptorxx.toolupgrades.registry.ModItems;
 
 
-@EventBusSubscriber(modid = References.MODID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = References.MODID)
 public class Events {
 
 
@@ -39,7 +39,7 @@ public class Events {
 
         // Must be used on bookshelf
         if (world.getBlockState(pos).getBlock() != Blocks.BOOKSHELF) {
-            if (world.isClientSide) {
+            if (world.isClientSide()) {
                 player.displayClientMessage(FormattingHelper.setModLangComponent("message", References.MODID, "wrong_block"), true);
             }
             return;
@@ -48,7 +48,7 @@ public class Events {
         // Check experience cost
         int cost = isNormalBinding ? Config.getBindingEnchantingCost() : Config.getAdvancedBindingEnchantingCost();
         if (player.experienceLevel < cost) {
-            if (world.isClientSide) {
+            if (world.isClientSide()) {
                 player.displayClientMessage(FormattingHelper.setModLangComponent("message", References.MODID, "not_enough_levels"), true);
             }
             return;
@@ -66,7 +66,7 @@ public class Events {
         }
 
         // Server-side processing
-        if (!world.isClientSide) {
+        if (!world.isClientSide()) {
             event.getItemStack().shrink(1);
             player.onEnchantmentPerformed(null, cost);
 

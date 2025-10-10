@@ -1,18 +1,15 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_advanced_ink",
     "minecraft:book"
-
   ],
-  
   "result": {
     "id": "minecraft:enchanted_book",
     "components": {
-        "minecraft:stored_enchantments": {
-              "minecraft:thorns": 3
-        }
+      "minecraft:stored_enchantments": {
+        "minecraft:thorns": 3
+      }
     }
   }
 }

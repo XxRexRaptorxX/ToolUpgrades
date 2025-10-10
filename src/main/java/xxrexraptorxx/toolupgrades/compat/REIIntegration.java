@@ -16,7 +16,7 @@ public class REIIntegration implements REIClientPlugin {
 
     @Override
     public void registerDisplays(DisplayRegistry registry) {
-        if(Config.getPassiveEnchanting()) {
+        if (Config.getPassiveEnchanting()) {
             BuiltinClientPlugin instance = BuiltinClientPlugin.getInstance();
             Component description = FormattingHelper.setModLangComponent("message", References.MODID, "enchant_bindings_jei_desc");
 
@@ -33,4 +33,3 @@ public class REIIntegration implements REIClientPlugin {
     }
 
 }
-

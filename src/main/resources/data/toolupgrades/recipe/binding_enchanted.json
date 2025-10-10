@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:redstone_binding",
     "minecraft:enchanted_book"
-
   ],
-  
   "result": {
     "id": "toolupgrades:enchanted_binding"
   }

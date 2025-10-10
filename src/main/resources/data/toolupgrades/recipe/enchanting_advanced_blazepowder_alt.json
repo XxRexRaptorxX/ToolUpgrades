@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_advanced_blaze_powder",
     "minecraft:nether_wart",
     "minecraft:book"
-
   ],
-  
   "result": {
     "id": "minecraft:enchanted_book",
     "components": {
-        "minecraft:stored_enchantments": {
-              "minecraft:fire_protection": 4
-        }
+      "minecraft:stored_enchantments": {
+        "minecraft:fire_protection": 4
+      }
     }
   }
 }

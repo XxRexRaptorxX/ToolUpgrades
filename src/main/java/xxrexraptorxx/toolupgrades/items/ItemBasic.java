@@ -16,7 +16,7 @@ public class ItemBasic extends Item {
 
     @Override
     public int getBurnTime(ItemStack stack, @Nullable RecipeType<?> recipeType, FuelValues fuelValues) {
-        if(this == ModItems.PASTE_BLAZE.get()) {
+        if (this == ModItems.PASTE_BLAZE.get()) {
             return 2000;
         } else {
             return 0;
@@ -26,7 +26,7 @@ public class ItemBasic extends Item {
 
     @Override
     public boolean isFoil(ItemStack stack) {
-        if(this == ModItems.BINDING_ENCHANTED.get() || this == ModItems.BINDING_ENCHANTED_ADVANCED.get()) {
+        if (this == ModItems.BINDING_ENCHANTED.get() || this == ModItems.BINDING_ENCHANTED_ADVANCED.get()) {
             return true;
         } else {
             return false;

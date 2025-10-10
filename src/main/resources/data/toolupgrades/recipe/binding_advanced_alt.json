@@ -2,19 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "group": "advanced_circuit",
   "pattern": [
-  
     " X ",
     "XOX",
     " X "
-  
   ],
-  
   "key": {
     "O": "toolupgrades:redstone_binding",
     "X": "#c:nuggets/gold"
   },
-  
-  
   "result": {
     "id": "toolupgrades:advanced_binding"
   }

@@ -1,7 +1,6 @@
 {
   "type": "minecraft:smelting",
   "ingredient": "toolupgrades:modifier_gun_powder",
-
   "result": {
     "id": "toolupgrades:modifier_blank"
   },

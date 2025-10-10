@@ -1,20 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-  
     "#X#",
     "XOX",
     "#X#"
-  
   ],
-  
   "key": {
     "O": "minecraft:water_bucket",
     "X": "minecraft:nether_wart",
     "#": "#c:gunpowders"
   },
-  
-  
   "result": {
     "id": "toolupgrades:paste_gun_powder"
   }

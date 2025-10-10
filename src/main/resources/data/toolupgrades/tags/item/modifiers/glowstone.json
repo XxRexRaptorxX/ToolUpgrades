@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "toolupgrades:modifier_glowstone",
     "toolupgrades:modifier_advanced_glowstone"
   ]

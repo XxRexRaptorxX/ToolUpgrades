@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_blank",
     "minecraft:soul_sand"
-
   ],
-  
   "result": {
     "id": "toolupgrades:modifier_cursed"
   }

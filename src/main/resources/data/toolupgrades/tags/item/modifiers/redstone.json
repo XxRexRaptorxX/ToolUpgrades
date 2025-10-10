@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "toolupgrades:modifier_redstone",
     "toolupgrades:modifier_advanced_redstone"
   ]

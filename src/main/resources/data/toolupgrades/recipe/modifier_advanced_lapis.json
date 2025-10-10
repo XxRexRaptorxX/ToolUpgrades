@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-  
     "toolupgrades:modifier_advanced_blank",
     "toolupgrades:paste_lapis"
-
   ],
-  
   "result": {
     "id": "toolupgrades:modifier_advanced_lapis"
   }

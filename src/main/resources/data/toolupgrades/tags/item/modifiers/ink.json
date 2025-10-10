@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "toolupgrades:modifier_ink",
     "toolupgrades:modifier_advanced_ink"
   ]

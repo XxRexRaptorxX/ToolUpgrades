@@ -17,10 +17,7 @@ import java.util.function.Consumer;
 public class ItemModifier extends Item {
 
     public ItemModifier(Item.Properties properties) {
-        super(properties
-            .rarity(Rarity.UNCOMMON)
-            .stacksTo(16)
-        );
+        super(properties.rarity(Rarity.UNCOMMON).stacksTo(16));
     }
 
 
@@ -32,7 +29,7 @@ public class ItemModifier extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> list, TooltipFlag flag) {
-        if(this == ModItems.MODIFIER_BLANK.get() || this == ModItems.MODIFIER_ADVANCED_BLANK.get()) {
+        if (this == ModItems.MODIFIER_BLANK.get() || this == ModItems.MODIFIER_ADVANCED_BLANK.get()) {
             list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "Bind effects on it..."));
 
         } else if (this == ModItems.MODIFIER_BLAZE.get() || this == ModItems.MODIFIER_ADVANCED_BLAZE.get()) {
@@ -74,7 +71,7 @@ public class ItemModifier extends Item {
             list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "+ " + fixEnchantmentName(Enchantments.DEPTH_STRIDER)));
 
         } else if (this == ModItems.MODIFIER_CURSED.get()) {
-            list.accept(Component.literal( ChatFormatting.OBFUSCATED + "+ Curses").withStyle(ChatFormatting.DARK_PURPLE));
+            list.accept(Component.literal(ChatFormatting.OBFUSCATED + "+ Curses").withStyle(ChatFormatting.DARK_PURPLE));
 
         } else {
             list.accept(Component.literal(ChatFormatting.DARK_PURPLE + "???"));
